@@ -1,3 +1,5 @@
-<%= render partial: 'store/category', collection: @categories %>
+<%= render partial: 'categories/category', collection: @categories %>
 
-<%= render partial: 'store/item', collection: @items.available_items %>
+<ul>
+  <%= render partial: 'categories/item', collection: @items.available_items %>
+</ul>
